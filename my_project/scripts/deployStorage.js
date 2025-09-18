@@ -8,12 +8,17 @@ const { LacchainProvider, LacchainSigner } = require("@lacchain/gas-model-provid
 const artifact = require("../artifacts/contracts/Storage.sol/Storage.json");
 
 
-//HACKATON
+//RPC AND NODE ADDRESS FOR DEMO PROPOSES DURING THE HACKATON.
+//FOR PRODUCTION USE YOUR OWN RPC AND NODE ADDRESS
+
 const RPC_URL     =  "http://35.193.217.67";
 const NODE_ADDR   =  "0xeeb69e2bffb267122d3ea9161bce16f94885244a";
 
-//put your private key here
-const PRIVATE_KEY = "0xPRIVATE_KEY";
+//FOR DEMO PROPOSES WE CREATE A RANDOM WALLET YOU SHOULD USE A REAL ONE
+//const PRIVATE_KEY = "0xYOURPRIVATEKEYHERE";
+
+let randomWallet = ethers.Wallet.createRandom();
+const PRIVATE_KEY = randomWallet.privateKey;
 
 async function main() {
   console.log("Starting deploy of contract:", artifact.contractName);
