@@ -88,7 +88,7 @@ The project supports lacnet:
 - **LacChain Provider**: Blockchain interaction
 
 ### Security Considerations
-⚠️ **Warning**: The deployment script contains a hardcoded private key for hackathon purposes. **Never use this in production**.
+⚠️ **Warning**: Use your own privete key by configuring PRIVATE_KEY on the deploy script. **Never use this in production**.
 
 For production deployments:
 1. Use environment variables for private keys
