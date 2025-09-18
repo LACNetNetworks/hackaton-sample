@@ -50,20 +50,6 @@ npm install
 npx hardhat compile
 ```
 
-## Usage
-
-### Running Tests
-
-Run all tests:
-```bash
-npx hardhat test
-```
-
-Run specific test types:
-```bash
-npx hardhat test solidity
-npx hardhat test mocha
-```
 
 ### Deployment
 
