@@ -12,10 +12,6 @@ const artifact = require("../artifacts/contracts/Storage.sol/Storage.json");
 const RPC_URL     =  "http://35.193.217.67";
 const NODE_ADDR   =  "0xeeb69e2bffb267122d3ea9161bce16f94885244a";
 
-//LACNET TESTNET WRITTER
-//const RPC_URL     =  "http://35.185.112.219";
-//const NODE_ADDR   =  "0xad730de8c4bfc3d845f7ce851bcf2ea17c049585"
-
 
 const PRIVATE_KEY = "0x1f55a6b2abfef7b04aa0bf71c26e5acf7c37c9eee52b515df9409ad28f73c83d";
 
