@@ -31,10 +31,8 @@ my_project/
 ├── scripts/
 │   └── deployStorage.js        # LacChain deployment script
 ├── test/
-│   └── Counter.ts              # Test files
 ├── ignition/
 │   └── modules/
-│       └── Counter.ts          # Ignition deployment modules
 └── hardhat.config.ts           # Hardhat configuration
 ```
 
@@ -62,19 +60,6 @@ node scripts/deployStorage.js
 ```
 
 **Note**: The deployment script contains hardcoded values for the hackathon. In production, these should be environment variables.
-
-#### Deploy using Ignition (Local/Testnet)
-
-For local development:
-```bash
-npx hardhat ignition deploy ignition/modules/Counter.ts
-```
-
-For Sepolia testnet:
-```bash
-npx hardhat keystore set SEPOLIA_PRIVATE_KEY
-npx hardhat ignition deploy --network sepolia ignition/modules/Counter.ts
-```
 
 ## Network Configuration
 
