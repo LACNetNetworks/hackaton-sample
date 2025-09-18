@@ -63,10 +63,7 @@ node scripts/deployStorage.js
 
 ## Network Configuration
 
-The project supports multiple networks:
-
-- **hardhatMainnet**: Local simulated L1 network
-- **hardhatOp**: Local simulated Optimism network
+The project supports lacnet:
 - **lacnet**: LacChain hackathon network (http://35.193.217.67)
 
 ## Key Features
