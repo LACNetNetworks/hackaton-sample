@@ -31,10 +31,8 @@ my_project/
 ├── scripts/
 │   └── deployStorage.js        # LacChain deployment script
 ├── test/
-│   └── Counter.ts              # Test files
 ├── ignition/
 │   └── modules/
-│       └── Counter.ts          # Ignition deployment modules
 └── hardhat.config.ts           # Hardhat configuration
 ```
 
@@ -50,20 +48,6 @@ npm install
 npx hardhat compile
 ```
 
-## Usage
-
-### Running Tests
-
-Run all tests:
-```bash
-npx hardhat test
-```
-
-Run specific test types:
-```bash
-npx hardhat test solidity
-npx hardhat test mocha
-```
 
 ### Deployment
 
@@ -77,25 +61,9 @@ node scripts/deployStorage.js
 
 **Note**: The deployment script contains hardcoded values for the hackathon. In production, these should be environment variables.
 
-#### Deploy using Ignition (Local/Testnet)
-
-For local development:
-```bash
-npx hardhat ignition deploy ignition/modules/Counter.ts
-```
-
-For Sepolia testnet:
-```bash
-npx hardhat keystore set SEPOLIA_PRIVATE_KEY
-npx hardhat ignition deploy --network sepolia ignition/modules/Counter.ts
-```
-
 ## Network Configuration
 
-The project supports multiple networks:
-
-- **hardhatMainnet**: Local simulated L1 network
-- **hardhatOp**: Local simulated Optimism network
+The project supports lacnet:
 - **lacnet**: LacChain hackathon network (http://35.193.217.67)
 
 ## Key Features
@@ -120,7 +88,7 @@ The project supports multiple networks:
 - **LacChain Provider**: Blockchain interaction
 
 ### Security Considerations
-⚠️ **Warning**: The deployment script contains a hardcoded private key for hackathon purposes. **Never use this in production**.
+⚠️ **Warning**: Use your own privete key by configuring PRIVATE_KEY on the deploy script. **Never use this in production**.
 
 For production deployments:
 1. Use environment variables for private keys
